@@ -24,7 +24,7 @@ Console.WriteLine("Welcome " + name);
 Console.WriteLine("Here are your grades: ");
 for (int i = 0; i < 10; i++)
 {
-    Console.Write(grades[i]);
+    Console.WriteLine(grades[i]);
     if (grades[i] >= 90 && grades[i] <= 100)
     {
         Console.WriteLine("This grade is an A!");
@@ -56,3 +56,7 @@ for (int i = 0; i < 10; i++)
 
     average += grades[i];
 }
+
+average = (average / 10);
+Console.WriteLine("Your final calculated average is: " + average);
+Console.WriteLine("We have displayed all grades for " + name);
